@@ -15,6 +15,9 @@ switch ($page) {
       include 'pages/user/edit_user.php';
       break;
       
+      case 'logout';
+      include 'pages/logout_process.php';
+      break;
   }
 }else{
     include "pages/home.php";
