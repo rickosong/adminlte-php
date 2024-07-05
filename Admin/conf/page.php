@@ -7,17 +7,29 @@ switch ($page) {
     include 'pages/user/data_user.php';
     break;
 
-    case 'input_user':
-      include 'pages/user/input_user.php';
-      break;
+  case 'input_user':
+    include 'pages/user/input_user.php';
+    break;
       
-      case 'edit_user';
-      include 'pages/user/edit_user.php';
-      break;
+  case 'edit_user';
+    include 'pages/user/edit_user.php';
+    break;
+
+  case 'data_kategori':
+    include 'pages/category/data_kategori.php';
+    break;
+
+  case 'input_kategori':
+    include 'pages/category/input_kategori.php';
+    break;
       
-      case 'logout';
-      include 'pages/logout_process.php';
-      break;
+  case 'edit_kategori';
+    include 'pages/category/edit_kategori.php';
+    break;
+      
+  case 'logout';
+    include 'pages/logout_process.php';
+    break;
   }
 }else{
     include "pages/home.php";

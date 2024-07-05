@@ -35,6 +35,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+          <!-- user section -->
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
@@ -43,15 +44,16 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <!-- user items -->
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="index.php?page=data_user" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tampil User</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="index.php?page=input_user" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tambah User</p>
                 </a>
@@ -60,6 +62,37 @@
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cetak Data User</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- kategori section -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Data Kategori
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <!-- kategori items -->
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=data_kategori" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tampil Kategori</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=input_kategori" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tambah Kategori</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cetak Data Kategori</p>
                 </a>
               </li>
             </ul>
