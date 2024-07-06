@@ -97,6 +97,38 @@
               </li>
             </ul>
           </li>
+          <!-- product section -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Data Produk
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <!-- product items -->
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?page=data_produk" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tampil Produk</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?page=input_produk" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tambah Produk</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cetak Data produk</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- logout -->
           <li class="nav-item">
                 <a href="index.php?page=logout" class="nav-link">
                   <i class="nav-icon fas fa-sign-out-alt"></i>

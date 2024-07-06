@@ -26,6 +26,18 @@ switch ($page) {
   case 'edit_kategori';
     include 'pages/category/edit_kategori.php';
     break;
+
+  case 'data_produk':
+    include 'pages/product/data_produk.php';
+    break;
+
+  case 'input_produk':
+    include 'pages/product/input_produk.php';
+    break;
+      
+  case 'edit_produk';
+    include 'pages/product/edit_produk.php';
+    break;
       
   case 'logout';
     include 'pages/logout_process.php';
