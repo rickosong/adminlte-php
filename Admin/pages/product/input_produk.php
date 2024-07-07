@@ -45,19 +45,15 @@
                       <div class="box box-primary">
                       <!-- /.box-header -->
                       <!-- form start -->
-                        <form role="form" method="post" action="pages/product/proses_input_produk.php">
+                        <form role="form" method="post" action="pages/product/proses_input_produk.php" enctype="multipart/form-data">
                           <div class="box-body">
                             <div class="form-group">
                               <label>Nama Produk</label>
-                                <input type="text" name="nama_produk" class="form-control" placeholder="Nama Produk" required>
+                                <input type="text" name="product_name" class="form-control" placeholder="Nama Produk" required>
                             </div>
                             <div class="form-group">
                               <label>Harga</label>
-                                <input type="text" name="harga" class="form-control" placeholder="Harga" required>
-                            </div>
-                            <div class="form-group">
-                              <label>Foto</label>
-                                <input type="text" name="foto" class="form-control" placeholder="Foto" required>
+                                <input type="text" name="price" class="form-control" placeholder="Harga" required>
                             </div>
                             <?php 
                             include "conf/conn.php";
@@ -65,17 +61,22 @@
                             ?>
                             <div class="form-group">
                               <label>Kategori</label>
-                              <select class="form-control" name="level">
+                              <select class="form-control" name="id_category">
                                 <option selected="true" disabled="disabled" value="">- Pilih Kategori Produk -</option>
                                 <?php foreach ($cat as $kat) { ?>
-                                <option value="<?= $kat['id'];  ?>"><?= $kat['category']; ?></option>
-                                <?php } ?>
-                              </select>
-                            </div>
-                            <div class="form-group">
-                              <label>Deskripsi</label>
-                                <textarea name="deskrispsi" class="form-control" id="" cols="50" rows="4" placeholder="Deskripsi"></textarea>
-                            </div>
+                                  <option value="<?= $kat['id'];  ?>"><?= $kat['category']; ?></option>
+                                  <?php } ?>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label>Deskripsi</label>
+                                <textarea name="deskripsi" class="form-control" id="" cols="50" rows="4" placeholder="Deskripsi"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label>Foto</label>
+                                  <input type="file" name="foto" class="form-control" placeholder="Foto" required>
+                                  <p style="color:red">Ekstensi yang diperbaolehkan .png | .jpg | .jpeg | .gif</p>
+                              </div>
                           </div>
                         <!-- /.box-body -->
                           <div class="box-footer">

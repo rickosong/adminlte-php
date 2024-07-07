@@ -78,10 +78,10 @@
                             <td><?php echo $produk['price'];?></td>
                             <td><?php echo $produk['image'];?></td>
                             <td><?php echo $produk['category'];?></td>
-                            <td><?php echo $produk['description'];?></td>
+                            <td><?php echo $produk['deskripsi'];?></td>
                             <td>
-                                <a href="index.php?page=edit_product&id=<?=$produk['ID_PRODUCT'];?>" class="btn btn-success" role="button" title="Ubah Data"><i class="glyphicon glyphicon-edit"></i>Edit</a>
-                                <a href="pages/product/delete_produk.php?id=<?=$user['ID_PRODUCT'];?>" class="btn btn-danger" role="button" title="Hapus Data"><i class="glyphicon glyphicon-trash"></i>Hapus</a>
+                                <a href="index.php?page=edit_produk&id=<?=$produk['ID_PRODUCT'];?>" class="btn btn-success" role="button" title="Ubah Data"><i class="glyphicon glyphicon-edit"></i>Edit</a>
+                                <a href="pages/product/delete_produk.php?id=<?=$produk['ID_PRODUCT'];?>" class="btn btn-danger" role="button" title="Hapus Data"><i class="glyphicon glyphicon-trash"></i>Hapus</a> 
                             </td>
                         </tr>
                     <?php } ?>
