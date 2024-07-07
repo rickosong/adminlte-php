@@ -14,7 +14,7 @@
                     <img src="./Admin/pages/product/gambar/<?php echo $tampilproduk['image']; ?>" width="100" height="300">
                     <div class="barang-judul">
                         <a href="?page=detail_produk&idproduk=<?php echo $tampilproduk['id']; ?>">
-                            <?php echo $tampilproduk['product_name']; ?>
+                            <?php echo (substr($tampilproduk['product_name'],0,25)."[..]"); ?>
                         </a>
                     </div>
                     <div class="barang-deskripsi"><?php echo (substr($tampilproduk['deskripsi'],0,45)."[..]"); ?></div> 
