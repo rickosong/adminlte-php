@@ -24,7 +24,7 @@
             <!-- Default box -->
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Tambah User</h3>
+                <h3 class="card-title">Tambah Produk</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -59,17 +59,22 @@
                               <label>Foto</label>
                                 <input type="text" name="foto" class="form-control" placeholder="Foto" required>
                             </div>
+                            <?php 
+                            include "conf/conn.php";
+                            $cat = mysqli_query($db, "SELECT * FROM category ORDER BY category ASC"); 
+                            ?>
                             <div class="form-group">
                               <label>Kategori</label>
                               <select class="form-control" name="level">
                                 <option selected="true" disabled="disabled" value="">- Pilih Kategori Produk -</option>
-                                <option value="admin">Administrator</option>
-                                <option value="user">User</option>
+                                <?php foreach ($cat as $kat) { ?>
+                                <option value="<?= $kat['id'];  ?>"><?= $kat['category']; ?></option>
+                                <?php } ?>
                               </select>
                             </div>
                             <div class="form-group">
                               <label>Deskripsi</label>
-                                <input type="text" name="deskripsi" class="form-control" placeholder="Deskripsi" required>
+                                <textarea name="deskrispsi" class="form-control" id="" cols="50" rows="4" placeholder="Deskripsi"></textarea>
                             </div>
                           </div>
                         <!-- /.box-body -->
