@@ -17,7 +17,7 @@
                             <?php echo (substr($tampilproduk['product_name'],0,25)."[..]"); ?>
                         </a>
                     </div>
-                    <div class="barang-deskripsi"><?php echo (substr($tampilproduk['deskripsi'],0,45)."[..]"); ?></div> 
+                    <div class="barang-deskripsi"><?php echo (substr($tampilproduk['deskripsi'],0,40)."[..]"); ?></div> 
                     <div class="barang-harga">Rp. <?php echo number_format($tampilproduk['price'],2); ?></div>
                 </div>
             </div>

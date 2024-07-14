@@ -29,10 +29,10 @@
                     <img src="./Admin/pages/product/gambar/<?php echo $tampilproduk['image']; ?>">
                     <div class="barang-judul">
                         <a href="?page=detail_produk&&idproduk=<?php echo $tampilproduk['id']; ?>">
-                            <?php echo $tampilproduk['product_name']; ?>
+                            <?php echo (substr($tampilproduk['product_name'],0,20)."[..]"); ?>
                         </a>
                     </div>
-                    <div class="barang-deskripsi"><?php echo $tampilproduk['deskripsi']; ?> ...</div>
+                    <div class="barang-deskripsi"><?php echo (substr($tampilproduk['deskripsi'],0,200)."[..]") ?> ...</div>
                     <div class="barang-harga">Rp. <?php echo number_format($tampilproduk['price'],2); ?></div>
                 </div>
             </div>

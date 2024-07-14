@@ -17,7 +17,7 @@
          <a href="?page=proses_order&&idproduk=<?php echo $tampildata['id']; ?>">Add To Cart</a>
         </h1>
         Stok <b><?php echo $tampildata['stok']; ?></b> Kategori <b><?php echo $kategori['category'] ?></b> Harga Rp. <b><?php echo number_format($tampildata['price'],2); ?></b><br>
-        <center><img src="./Admin/pages/product/gambar/<?php echo $tampildata['image']; ?>" width="100%"></center>
+        <center><img src="./Admin/pages/product/gambar/<?php echo $tampildata['image']; ?>" width="60%"></center>
         <?php echo $tampildata['deskripsi']; ?>
     </div
     >
