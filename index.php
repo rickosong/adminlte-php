@@ -15,7 +15,7 @@ include "koneksi.php";
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    Rickomputer.com
+                    <strong style="font-size: 25px; font-weight: bold; color: #000" >Ric<span style="color: #DC143C">komputer</span></strong>
                 </div>
                 <div class="col-8">
                     <a href="?" class="menu-style">Beranda</a>
@@ -66,18 +66,20 @@ include "koneksi.php";
         <div class="container">
             <div class="row">
                 <div class="col-4 kolom-footer">
-                Kiri
+                <strong>Jalan:</strong> Jl. Tiada ujung 
                 </div>
                 <div class="col-4 kolom-footer">
-                Tengah
+                    <h2>Kontak Dukungan Pelanggan</h2>
+                    <p>Jika Anda memiliki pertanyaan atau masalah selama berbelanja, jangan ragu untuk menghubungi kami melalui email atau telepon.</p>
                 </div>
                 <div class="col-4 kolom-footer">
-                kanan
+                    <p><strong>Email:</strong> support@rickomputer.com</p>
+                    <p><strong>Telepon:</strong> 123-456-7890</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer2">Create by Ferdian Rahabista © 2018. All Right Reserved</div>
+    <div class="footer2">Create by Mohammad Ricko Aprilianto &copy; <?= date("Y") ?>. All Right Reserved</div>
 </section>
 </body>
 </html>

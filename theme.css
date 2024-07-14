@@ -44,31 +44,33 @@ body{
 }
 /* Header */
 .menu-atas{
-    background:#4BC400;
+    background:#DC143C;
     padding:10px;
     margin:0 auto;
 }
 .header{
     padding:10px 5px;
     background:#FFFFFF;
-    border-bottom:5px solid #51B500;
+    border-bottom:5px solid #DC143C;
 }
 .menu-style{
     float:left;
+    transition: 0.2s;
     padding:10px 15px;
     text-decoration:none;
     color:#000000;
 }
 .menu-style:hover{
-    background:#1BCC00;
+    transition: 0.2s;
+    background:#DC143C;
     color:#FFFFFF;
 }
 
 .slideshow{
     width:100%;
-    background:url(images/slideshow.jpg);
+    background:url(images/slideshow.png);
     background-size:cover;
-    height:400px;
+    height:500px;
 }
 
 .produk-title{
@@ -79,17 +81,28 @@ body{
 .box-barang{
     border:1px solid #E9E9E9;
     padding:10px;
+    transition: 0.1s;
 }
 .box-barang:hover{
-    border:1px solid #3FC700;
+    border:2px solid #DC143C;
+    transition: 0.1s; 
 }
 .box-barang img{
     width:100%;
 }
-.barang-judul{
+.barang-judul a{
     font-size:20px;
-    color:#539A00;
+    color:#000;
     font-weight:800;
+    text-decoration: none;
+}
+.barang-judul a:hover{
+    font-size:20px;
+    color:#DC143C;
+    font-weight:800;
+    transition: 0.5s;
+    text-transform: underline;
+    ease-in-out;
 }
 .barang-deskripsi{
     color:#C5C5C5;
@@ -103,6 +116,12 @@ body{
 .footer1{
     background:#2D3335;
     height:250px;
+}
+.footer1 .container h2{
+    color: #DC143C;
+}
+.footer1 .container strong{
+    color: #DC143C;
 }
 .footer2{
     background:#292929;
