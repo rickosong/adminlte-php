@@ -125,7 +125,7 @@ body{
 }
 .footer1 .container .map-container {
     width: 100%;
-    height: 400px; /* Atur tinggi sesuai keinginan */
+    height: 100px; /* Atur tinggi sesuai keinginan */
 }
 .footer2{
     background:#292929;

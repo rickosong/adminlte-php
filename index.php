@@ -67,7 +67,7 @@ include "koneksi.php";
         <div class="container">
             <div class="row">
                 <div class="col-4 kolom-footer">
-                <strong>Jalan:</strong> Jl. Tiada ujung Komplek Apa Adanya RT. 38
+                <strong>Alamat:</strong> Jl. Tiada ujung Komplek Apa Adanya RT. 38
                 <br> <br>
                 <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.7777266546881!2d114.60355162366196!3d-3.289615187734063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de42376d022e869%3A0x79b6369c17d802ba!2sJalan%20Padat%20Karya%20Jalur%207B%20No.3%2C%20Sungai%20Jingah%2C%20Kec.%20Banjarmasin%20Utara%2C%20Kota%20Banjarmasin%2C%20Kalimantan%20Selatan%2070122!5e0!3m2!1sid!2sid!4v1721006115348!5m2!1sid!2sid"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

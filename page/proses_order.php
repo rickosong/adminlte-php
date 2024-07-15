@@ -1,4 +1,4 @@
-div class="container">
+
     <h3>PROSES PEMBELIAN</h3>
    <div class="row">
        <div class="col-9">
