@@ -54,6 +54,7 @@
                       <th>NAMA PRODUK</th>
                       <th>HARGA</th>
                       <th>FOTO</th>
+                      <th>STOK</th>
                       <th>KATEGORI</th>
                       <th>DESKRIPSI</th>
                       <th>AKSI</th>
@@ -77,6 +78,7 @@
                             <td><?php echo $produk['product_name'];?></td>
                             <td><?php echo $produk['price'];?></td>
                             <td><?php echo $produk['image'];?></td>
+                            <td><?php echo $produk['stok'];?></td>
                             <td><?php echo $produk['category'];?></td>
                             <td><?php echo $produk['deskripsi'];?></td>
                             <td>

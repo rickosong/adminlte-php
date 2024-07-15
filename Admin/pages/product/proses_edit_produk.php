@@ -4,6 +4,7 @@ if($_POST) {
     $id_product = $_POST['id_product'];
     $product_name = $_POST['product_name'];
     $price = $_POST['price'];
+    $stok = $_POST['stok'];
     $id_category = $_POST['id_category'];
     $deskripsi = $_POST['deskripsi'];
     $lama=$_POST['foto_lama']; //variabel foto lama
@@ -17,6 +18,7 @@ if($_POST) {
         $query = $db->query("UPDATE product SET
         product_name = '".$product_name."',
         price = '".$price."',
+        stok = '".$stok."',
         id_category = '".$id_category."',
         deskripsi = '".$deskripsi."'
         WHERE id = '".$id_product."'

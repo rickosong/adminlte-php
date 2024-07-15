@@ -26,7 +26,7 @@ if (isset($_GET['proses']) && $_GET['proses'] == 'hapus') {
     $result = mysqli_query($koneksi, $delete_query);
     
     if ($result) {
-        echo '<script>alert("Data Berhasil Dihapus !!!");
+        echo '<script>alert("Barang Berhasil DiHapus !!!");
         window.location.href="index.php?page=keranjang_belanja"</script>
         ';
     } else {
@@ -38,16 +38,17 @@ if (isset($_GET['proses']) && $_GET['proses'] == 'hapus') {
 
 // checkout barang
 if (isset($_GET['proses']) && $_GET['proses'] == 'checkout') {
-    $totalakhir = $_POST['totalakhir'];
     $daftarbelanja = mysqli_query($koneksi, "SELECT * FROM keranjang a LEFT JOIN product b ON a.id_product = b.id");
     
     while ($item = mysqli_fetch_array($daftarbelanja)) {
         $id_product = $item['id_product'];
         $qty = $item['qty'];
+        $harga = $item['harga'];
         $subtotal = $item['subtotal'];
         
         // Simpan ke dalam tabel pesanan
-        $insert_order = "INSERT INTO orders (id_product, qty, subtotal) VALUES ('$id_product', '$qty', '$subtotal')";
+        $insert_order = "INSERT INTO orders (id_product, subtotal) VALUES ('$id_product', '$subtotal')";
+        
         $result_order = mysqli_query($koneksi, $insert_order);
         
         if (!$result_order) {
@@ -61,7 +62,9 @@ if (isset($_GET['proses']) && $_GET['proses'] == 'checkout') {
     $result_delete_cart = mysqli_query($koneksi, $delete_cart);
     
     if ($result_delete_cart) {
-        echo "Checkout berhasil. Semua item telah dihapus dari keranjang.";
+        echo '<script>alert("Barang Berhasil DiCheckout !!!");
+        window.location.href="index.php?page=checkout"</script>
+        ';
     } else {
         echo "Gagal menghapus item dari keranjang: " . mysqli_error($koneksi);
     }
@@ -118,7 +121,7 @@ if (isset($_GET['proses']) && $_GET['proses'] == 'checkout') {
 
         </table>
 
-        <center><a href="?page=checkout" onclick="return prompt('Masukkan Nama Pemesan')">CHECKOUT / SELESAI PEMBELIAN </a></center>
+        <center><a href="?page=keranjang_belanja&proses=checkout">CHECKOUT / SELESAI PEMBELIAN </a></center>
 
     </div>
     <div class="col-3">

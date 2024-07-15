@@ -73,6 +73,10 @@
                               <input type="text" name="price" class="form-control" placeholder="Harga" required
                               value="<?php echo $data_product['price']; ?>">
                           </div>
+                          <div class="form-group">
+                              <label>Stok</label>
+                                <input type="text" name="stok" class="form-control" placeholder="Stok" required value="<?php echo $data_product['stok']; ?>"  >
+                            </div>
                           <?php
                           include "conf/conn.php";
                           $cat = $db->query("SELECT * FROM category ORDER BY category ASC");

@@ -55,6 +55,10 @@
                               <label>Harga</label>
                                 <input type="text" name="price" class="form-control" placeholder="Harga" required>
                             </div>
+                            <div class="form-group">
+                              <label>Stok</label>
+                                <input type="text" name="stok" class="form-control" placeholder="Stok" required>
+                            </div>
                             <?php 
                             include "conf/conn.php";
                             $cat = mysqli_query($db, "SELECT * FROM category ORDER BY category ASC"); 
