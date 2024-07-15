@@ -47,7 +47,7 @@ if (isset($_GET['proses']) && $_GET['proses'] == 'checkout') {
         $subtotal = $item['subtotal'];
         
         // Simpan ke dalam tabel pesanan
-        $insert_order = "INSERT INTO orders (id_product, subtotal) VALUES ('$id_product', '$subtotal')";
+        $insert_order = "INSERT INTO orders (id_product, subtotal, qty) VALUES ('$id_product', '$subtotal', '$qty')";
         
         $result_order = mysqli_query($koneksi, $insert_order);
         
